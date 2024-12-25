@@ -1,4 +1,4 @@
-## 學習歷程
+## 11328201 學習歷程
 ** C語言與python的條件式
 
 C：
@@ -10,6 +10,7 @@ else if(score>=80)
 ......
 
 python：
+```python
 score=int(input())
 if score>=90:
     print("A");
@@ -17,8 +18,14 @@ elif score>=80:
 ......
 
 ** python的迴圈式
-
-while 
+## while 條件(條件成立時):重複到不符合條件時，break
+## for i in range(a, b):重複b-a次，i=a、i=a+1...i=b-1
+n=int(input())
+i=1
+while i<n+1:
+    for j in range(1, i+1):
+        print("*"*j)
+    i=i+1
 
 
 tasks = [
