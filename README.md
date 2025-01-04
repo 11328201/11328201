@@ -54,6 +54,37 @@ def f(n):
 a=int(input())
 print(f(a))
 ```
+程式碼6
+```python
+def f(n):
+    k=0
+    a=n**0.5
+    for i in range(2, a+1):
+        if n%i==0:
+            k=k+1
+    if k=0:
+        return 1 #是質數
+    else:
+        return 0 #不是質數
+sum=0
+M, N=int(split().input())
+for j in range(M, N+1):
+    if f(j)=1:
+        sum=sum+j
+print(sum)
+```
+程式碼7
+```python
+def f(n):
+    if n==0 or n==1:
+        return 1
+    elif n==2:
+        return 2
+    else:
+        return f(n-3)+f(n-2)+f(n-1)
+N=int(input())
+print(f(N))
+```
 tasks = [
     {"title": "寫報告", "description": "完成期末專案報告", "due_date": "2025-01-14", "priority": "高", "completed": False},
     {"title": "期末考", "description": "複習已學", "test_date":"1/7~1/10", "priority": "中", "completed": False},
@@ -61,6 +92,7 @@ tasks = [
 \\描述任務清單中的各種名稱和各項資料
 
 實作遊戲：條件式應用、while迴圈應用
+程式碼8
 ```python
 k=1;
 while k==1:
