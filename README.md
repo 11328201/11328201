@@ -30,8 +30,8 @@ while i<n+1:
     for j in range(1, i+1):
         print("*"*j)
     i=i+1
-for j in range(1, 6)
-    print("*"*j)
+for k in range(1, 6)
+    print("*"*k)
 ```
 
 tasks = [
@@ -46,7 +46,7 @@ k=1;
 while k==1:
     print("情境：你是一名美國留學生，你的室友這天晚上8:00說他要和他的朋友在特定地點交易，車程需要30分鐘，他希望你開車載他。")
     print("(1) \"為什麼地點那麼遠？\"")
-    print("(2) \"好啊，反正我剛好有空。\"")
+    print("(2) \"好，我剛好有空。\"")
     print("(3) 查找地圖資料，確認當地安全性")
     a=int(input())
     if a==1:
