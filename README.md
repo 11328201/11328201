@@ -85,14 +85,50 @@ def f(n):
 N=int(input())
 print(f(N))
 ```
-tasks = [
-    {"title": "寫報告", "description": "完成期末專案報告", "due_date": "2025-01-14", "priority": "高", "completed": False},
-    {"title": "期末考", "description": "複習已學", "test_date":"1/7~1/10", "priority": "中", "completed": False},
-]
-\\描述任務清單中的各種名稱和各項資料
+
+程式碼8
+```python
+a=[3, 4, 5, 6]
+a[2]=9
+print(a)
+```
+輸出結果為：[3, 4, 9, 6]
+程式碼9
+```python
+a=(3, 4, 5, 6)
+a[2]=9
+print(a)
+```
+無法正確輸出
+程式碼10
+```python
+a={3, 4, 3, 5, 6}
+print(a)
+```
+輸出結果為：{3, 4, 5, 6}
+程式碼11
+```python
+dic={
+    "A"="a",
+    "B"="b",
+    "C"="c",
+}
+print(dic)
+print("C" in dic)
+print("D" in dic)
+C=dic.pop("C")
+print(C)
+print(dic)
+```
+print("C" in dic)中，字典裡有"C"這個元素，所以輸出True
+print("D" in dic)中，字典裡沒有"D"這個元素，所以輸出False
+C=dic.pop("C")可將元素"C"儲存到變數C中，元素"C"被提取出來
+print(C) 的輸出為c
+print(dic) 的輸出變成{
+    "A"="a", "B"="b"}
 
 實作遊戲：條件式應用、while迴圈應用
-程式碼8
+程式碼12
 ```python
 k=1;
 while k==1:
